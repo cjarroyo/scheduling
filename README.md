@@ -96,4 +96,6 @@ Crea un paquete "com.example.schedulerdemo.config", y dentro la clase SchedulerC
  Current Thread : my-scheduled-task-pool-1<br>
 Current Thread : my-scheduled-task-pool-2<br>
 
-etc...
+etc...<br>
+
+fuente: https://www.callicoder.com/spring-boot-task-scheduling-with-scheduled-annotation/
