@@ -93,7 +93,7 @@ Crea un paquete "com.example.schedulerdemo.config", y dentro la clase SchedulerC
  Es todo lo que necesitas saber de configuracion de spring para usar tu propio thread pool en lugar del predeterminado.<br>
  Registras el nombre del thread actual en los metodos @Scheduled y obtendras los resultados de esta manera<br>
  Output<br>
- Current Thread : my-scheduled-task-pool-1
-Current Thread : my-scheduled-task-pool-2
+ Current Thread : my-scheduled-task-pool-1<br>
+Current Thread : my-scheduled-task-pool-2<br>
 
-# etc...
+etc...
