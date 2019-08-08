@@ -54,4 +54,16 @@ Fixed Delay Task :: Execution Time - 10:30:08<br>
 Fixed Delay Task :: Execution Time - 10:30:15<br>
 ....<br><br>
 
+<b> 3 Tarea programada con velocidad fija y Retraso inicial (Fixed Delay & initialDelay)</b><br>
+  Puede usar el parámetro initialDelay con fixedRate y fixedDelay para retrasar la primera ejecución de la tarea con el número especificado de milisegundos.<br>
+  En el siguiente ejemplo, la primera ejecución de la tarea se retrasará 5 segundos y luego se ejecutará normalmente en un intervalo fijo de 2 segundos:<br>
+@Scheduled(fixedRate = 2000, initialDelay = 5000)<br>
+public void scheduleTaskWithInitialDelay() {<br>
+    logger.info("Fixed Rate Task with Initial Delay :: Execution Time - {}", dateTimeFormatter.format(LocalDateTime.now()));<br>
+}<br>
+Fixed Rate Task with Initial Delay :: Execution Time - 10:48:51<br>
+Fixed Rate Task with Initial Delay :: Execution Time - 10:48:53<br>
+Fixed Rate Task with Initial Delay :: Execution Time - 10:48:55<br>
+....<br><br>
+
   
