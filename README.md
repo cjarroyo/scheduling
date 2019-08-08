@@ -22,5 +22,16 @@ Los metodos que van implementar el schedule deben cumplir con 2 criterios<br>
 Pasemos ahora a la implementacion
 <br><br>
 <b> 1 Tarea programada con intervalos fijos (Fixed Rate)<b>
+  Puedes programar un metodo para que se ejecute en un intervalo fijo usando el parametro fixedRate en la notacion @Scheduled<br>
+  En el ejemplo el metodo anotado se ejecutara cada 2 segundos<br>
+@Scheduled(fixedRate = 2000)
+public void scheduleTaskWithFixedRate() {
+    logger.info("Fixed Rate Task :: Execution Time - {}", dateTimeFormatter.format(LocalDateTime.now()) );
+}<br>
+Output<br>
+Fixed Rate Task :: Execution Time - 10:26:58<br>
+Fixed Rate Task :: Execution Time - 10:27:00<br>
+Fixed Rate Task :: Execution Time - 10:27:02<br>
+....
 
   
