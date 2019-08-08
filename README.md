@@ -21,7 +21,7 @@ Los metodos que van implementar el schedule deben cumplir con 2 criterios<br>
 -El metodo no debe tener argumentos<br>
 Pasemos ahora a la implementacion
 <br><br>
-<b> 1 Tarea programada con intervalos fijos (Fixed Rate)<b>
+<b> 1 Tarea programada con intervalos fijos (Fixed Rate)</b><br>
   Puedes programar un metodo para que se ejecute en un intervalo fijo usando el parametro fixedRate en la notacion @Scheduled<br>
   En el ejemplo el metodo anotado se ejecutara cada 2 segundos<br>
 @Scheduled(fixedRate = 2000)
