@@ -24,7 +24,7 @@ Pasemos ahora a la implementacion
 <b> 1 Tarea programada con intervalos fijos (Fixed Rate)</b><br>
   Puedes programar un metodo para que se ejecute en un intervalo fijo usando el parametro fixedRate en la notacion @Scheduled<br>
   En el ejemplo el metodo anotado se ejecutara cada 2 segundos<br>
-@Scheduled(fixedRate = 2000)
+@Scheduled(fixedRate = 2000)<br>
 public void scheduleTaskWithFixedRate() {<br>
     $nbsp;&nbsp;logger.info("Fixed Rate Task :: Execution Time - {}", dateTimeFormatter.format(LocalDateTime.now()) );<br>
 }<br>
@@ -37,7 +37,7 @@ Fixed Rate Task :: Execution Time - 10:27:02<br>
   
 <b> 2 Tarea programada con retraso Fijo (Fixed Delay)</b><br>
   Puedes ejecutar una tarea con un retraso Fijo entre la finalizacion de la ultima invocacion y el inicio de la siguiente, usando el parametro fixedDelay. Ese retraso es el fixedDelay.<br>
-@Scheduled(fixedDelay = 2000)
+@Scheduled(fixedDelay = 2000)<br>
 public void scheduleTaskWithFixedDelay() {<br>
     &nbsp;logger.info("Fixed Delay Task :: Execution Time - {}", dateTimeFormatter.format(LocalDateTime.now()));<br>
     &nbsp;&nbsp;try {<br>
