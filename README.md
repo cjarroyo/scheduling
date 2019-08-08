@@ -26,7 +26,7 @@ Pasemos ahora a la implementacion
   En el ejemplo el metodo anotado se ejecutara cada 2 segundos<br>
 @Scheduled(fixedRate = 2000)<br>
 public void scheduleTaskWithFixedRate() {<br>
-    $nbsp;&nbsp;logger.info("Fixed Rate Task :: Execution Time - {}", dateTimeFormatter.format(LocalDateTime.now()) );<br>
+    &nbsp;&nbsp;logger.info("Fixed Rate Task :: Execution Time - {}", dateTimeFormatter.format(LocalDateTime.now()) );<br>
 }<br>
   ojo, FixedRate se invoca en el intervalo especificado, incluso, si la invocacion anterior no ha terminado.<br>
 Output<br>
@@ -59,11 +59,22 @@ Fixed Delay Task :: Execution Time - 10:30:15<br>
   En el siguiente ejemplo, la primera ejecución de la tarea se retrasará 5 segundos y luego se ejecutará normalmente en un intervalo fijo de 2 segundos:<br>
 @Scheduled(fixedRate = 2000, initialDelay = 5000)<br>
 public void scheduleTaskWithInitialDelay() {<br>
-    logger.info("Fixed Rate Task with Initial Delay :: Execution Time - {}", dateTimeFormatter.format(LocalDateTime.now()));<br>
+    &nbsp;logger.info("Fixed Rate Task with Initial Delay :: Execution Time - {}", dateTimeFormatter.format(LocalDateTime.now()));<br>
 }<br>
 Fixed Rate Task with Initial Delay :: Execution Time - 10:48:51<br>
 Fixed Rate Task with Initial Delay :: Execution Time - 10:48:53<br>
 Fixed Rate Task with Initial Delay :: Execution Time - 10:48:55<br>
 ....<br><br>
 
-  
+  <b> 4 Tarea programada usando Cron expression (cron)</b><br>
+  Sirve para programar la ejecución de sus tareas<br>
+  Con esta URL, puedes crear tu patron: https://www.freeformatter.com/cron-expression-generator-quartz.html
+En el siguiente ejemplo, he programado que la tarea se ejecute cada minuto:<br>
+@Scheduled(cron = "0 * * * * ?")<br>
+public void scheduleTaskWithCronExpression() {<br>
+    &nbsp;logger.info("Cron Task :: Execution Time - {}", dateTimeFormatter.format(LocalDateTime.now()));<br>
+}<br>
+Fixed Rate Task with Initial Delay :: Execution Time - 10:48:51<br>
+Fixed Rate Task with Initial Delay :: Execution Time - 10:48:53<br>
+Fixed Rate Task with Initial Delay :: Execution Time - 10:48:55<br>
+....<br><br>
