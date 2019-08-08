@@ -25,8 +25,8 @@ Pasemos ahora a la implementacion
   Puedes programar un metodo para que se ejecute en un intervalo fijo usando el parametro fixedRate en la notacion @Scheduled<br>
   En el ejemplo el metodo anotado se ejecutara cada 2 segundos<br>
 @Scheduled(fixedRate = 2000)
-public void scheduleTaskWithFixedRate() {
-    logger.info("Fixed Rate Task :: Execution Time - {}", dateTimeFormatter.format(LocalDateTime.now()) );
+public void scheduleTaskWithFixedRate() {<br>
+    <t>logger.info("Fixed Rate Task :: Execution Time - {}", dateTimeFormatter.format(LocalDateTime.now()) );<br>
 }<br>
 Output<br>
 Fixed Rate Task :: Execution Time - 10:26:58<br>
