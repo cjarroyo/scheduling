@@ -74,7 +74,7 @@ En el siguiente ejemplo, he programado que la tarea se ejecute cada minuto:<br>
 public void scheduleTaskWithCronExpression() {<br>
     &nbsp;logger.info("Cron Task :: Execution Time - {}", dateTimeFormatter.format(LocalDateTime.now()));<br>
 }<br>
-Fixed Rate Task with Initial Delay :: Execution Time - 10:48:51<br>
-Fixed Rate Task with Initial Delay :: Execution Time - 10:48:53<br>
-Fixed Rate Task with Initial Delay :: Execution Time - 10:48:55<br>
+Cron Task :: Execution Time - 11:03:00<br>
+Cron Task :: Execution Time - 11:04:00<br>
+Cron Task :: Execution Time - 11:05:00<br>
 ....<br><br>
